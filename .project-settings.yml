@@ -1,9 +1,18 @@
 module-template: ! 'module MODULE_NAME where
 
 '
-extensions: {}
-environment: default
+extensions:
+  TemplateHaskell: true
+  OverloadedStrings: true
+  ImplicitPrelude: false
+  QuasiQuotes: true
+  TypeFamilies: true
+  DeriveDataTypeable: true
+  MultiParamTypeClasses: true
+environment: ghc-7.4.2-unstable
 cabal-file: project.cabal
+hidden-packages: ''
 version: 1
+extra-packages: ''
 ghc-args: []
 excluded-modules: []
